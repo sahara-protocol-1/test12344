@@ -1,0 +1,179 @@
+@import '../css/normalize.css';
+
+// --- mixin ---
+@mixin inter {
+  font-family: 'Inter', sans-serif;
+}
+@mixin poppins {
+  font-family: 'Poppins', sans-serif;
+}
+// --- /mixin ---
+
+// --- variables ---
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+// --- /variables ---
+
+// --- common ---
+.btn-main {
+  @include poppins;
+  font-size: 18px;
+  font-weight: $fw-medium;
+  line-height: 28px;
+  white-space: nowrap;
+
+  color: #fff;
+  padding: 16px 32px;
+  background-color: #FF553E;
+ 
+  outline: none;
+  border: none;
+  border-radius: 34px;
+  text-decoration: none;
+  cursor: pointer;
+    
+  
+  &:hover {
+    background-color: #fa2408;
+  }
+
+}
+
+.btn-text {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  margin: auto;
+  color: #000;
+    
+  &:hover {
+    color: #FF553E;
+  }
+
+}
+
+body {
+  @include inter;
+  max-width: 1090px;
+  //background: yellow;
+  margin: 0 auto;
+}
+// --- /common ---
+
+// --- header --- >
+
+.wrapper-outer {
+  max-width: 1070px;
+  margin: 0 auto;
+  background-color: pink;
+}
+
+.wrapper-inner {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.section-inner-header {
+  //height: 100vh;
+}
+
+.central-navigation {
+  margin-top: 40px;
+  height: 60px;
+  //background: lime;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+
+    &__list-item {
+      margin-left: auto;
+      //background: white;
+      display: flex;
+      flex-direction: row;
+      @include poppins;
+      font-weight: $fw-regular;
+      font-size: 18px;
+      
+        li {
+          list-style: none;
+            & + li {
+            margin-left: 48px;
+            }
+
+          a {
+            text-decoration: none;
+          }
+          
+        }
+      }
+    
+
+      &__button {
+        display: flex;
+        margin-left: 141px;
+        a + a {
+          margin-left: 36px;
+        }
+      
+        
+      }
+  
+}
+
+
+// --- /header --- >
+
+// --- fun-fact --- >
+.section-fun-fact {}
+// --- /fun-fact --- >
+
+// --- analytics --- >
+.section-analytics {}
+// --- /analytics --- >
+
+// --- tracker --- >
+.section-tracker {}
+// --- /tracker --- >
+
+// --- price --- >
+.section-price {}
+// --- /price --- >
+
+// --- trust --- >
+.section-trust {}
+// --- /trust --- >
+
+// --- client --- >
+.section-client {}
+// --- /client --- >
+
+// --- get-now --- >
+.section-get-now {}
+// --- /get-now --- >
+
+// --- footer --- >
+.section-footer {}
+// --- /footer --- >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

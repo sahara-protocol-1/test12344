@@ -1,0 +1,80 @@
+@import '../css/normalize.css';
+.btn-main {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  white-space: nowrap;
+  color: #fff;
+  padding: 16px 32px;
+  background-color: #FF553E;
+  outline: none;
+  border: none;
+  border-radius: 34px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-main:hover {
+  background-color: #fa2408;
+}
+
+.btn-text {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  margin: auto;
+  color: #000;
+}
+.btn-text:hover {
+  color: #FF553E;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  max-width: 1090px;
+  margin: 0 auto;
+}
+
+.wrapper-outer {
+  max-width: 1070px;
+  margin: 0 auto;
+  background-color: pink;
+}
+
+.wrapper-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.central-navigation {
+  margin-top: 40px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.central-navigation__list-item {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.central-navigation__list-item li {
+  list-style: none;
+}
+.central-navigation__list-item li + li {
+  margin-left: 48px;
+}
+.central-navigation__list-item li a {
+  text-decoration: none;
+}
+.central-navigation__button {
+  display: flex;
+  margin-left: 141px;
+}
+.central-navigation__button a + a {
+  margin-left: 36px;
+}

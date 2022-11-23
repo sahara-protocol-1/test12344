@@ -1,0 +1,67 @@
+@import '../css/normalize.css';
+body {
+  font-family: "Inter", sans-serif;
+  max-width: 1090px;
+  background: yellow;
+  margin: 0 auto;
+}
+
+.wrapper-outer {
+  max-width: 1070px;
+  margin: 0 auto;
+  background-color: pink;
+}
+
+.wrapper-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.central-navigation {
+  background: lime;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.central-navigation-wrapper {
+  background: gray;
+  height: 60px;
+  align-items: center;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+}
+.central-navigation-wrapper__list {
+  background: white;
+  justify-content: left;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  flex-direction: row;
+  align-content: flex-start;
+}
+.central-navigation-wrapper__list ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-inline-start: 0px;
+  margin-left: auto;
+}
+.central-navigation-wrapper__list ul li + li {
+  margin-left: 48px;
+}
+.central-navigation-wrapper__list ul li a {
+  text-decoration: none;
+}
+.central-navigation-wrapper__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  background: lime;
+  margin-left: auto;
+}
+.central-navigation-wrapper__button button {
+  width: 133px;
+  height: 40px;
+}
